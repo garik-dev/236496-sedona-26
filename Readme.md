@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Ляхов](https://up.htmlacademy.ru/htmlcss/26/user/236496).
-* Наставник: [Валентина Видяева] (https://up.htmlacademy.ru/htmlcss/26/user/189794).
+* Наставник: [Валентина Видяева](https://up.htmlacademy.ru/htmlcss/26/user/189794).
 
 ---
 
