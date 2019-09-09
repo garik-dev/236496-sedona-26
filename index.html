@@ -7,45 +7,55 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" width="140" htight="72" alt="Логотип города Седона">
-        <nav>
-            <ul>
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="gallereya.html">Фото и видео</a></li>
-                <li><a href="map_state.html">Карта штата</a></li>
+    <header class="page-header">
+        <nav class="page-navigation">
+            <span class="page-header-logo"><img src="img/logo.png" width="140" htight="72" alt="Логотип города Седона">
+            </span>
+            <ul class="main-navigation">
+                <li><a href="">Информация</a></li>
+                <li><a href="">Фото и видео</a></li>
+                <li><a href="">Карта штата</a></li>
                 <li><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Седона</h1>
-        <section>
-            <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-            <img src="img/banner.jpg" alt="Добро пожаловать в Седону">
+        <section class="page-banner">
+            <h1>Седона</h1>
+            <span class="page-banner-img"> <img src="img/banner.jpg" alt="Добро пожаловать в Седону"></span>
         </section>
-        <section>
-            <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-            <div class="advantage">
-                <!-- По заданию верстаем позже -->
-            </div>
+
+        <section class="advantages">
+            <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+            </h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+            <div class="advantage-first"></div>
+            <ul class="advantage-second"></ul>
+            <div class="advantage-third"></div>
+            <ul class="adventage-fourth"></ul>
         </section>
-        <section>
-            <h2>Поиск гостиницы в Седоне</h2>
-            <p>Заинтересовались</p>
+
+        <section class="hotel-search">
+
+            <!-- Здесь, думаю, все таки h2, по аналогии с предыдущей секцией. И еще: может быть h2 и p объединить в блок? -->
+            <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <img src="img/map.jpg" alt="Найти отель на карте Седоны">
-            <div class="advantage">
-                <!-- По заданию верстаем позже -->
-                <form action="">Поиск гостиницы в Седоне</form>
+            <img src="img/map.jpg" width="1200" height="594" alt="Найти
+                    отель на карте Седоны">
+
+            <!-- По заданию верстаем позже -->
+
+            <form action="">Поиск гостиницы в Седоне</form>
+
         </section>
     </main>
 
     <footer>
-        <p>#VISITSEDONA</p>
+        <span class="hashtag">#VISITSEDONA</span>
 
-        <ul>
+        <ul class="social-network">
             <li>
                 <a href="#">В контакте</a>
             </li>
@@ -58,7 +68,7 @@
         </ul>
         <div>
             <span>WEBSITE BY</span>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_acdemy.png" width="115" height="41" alt="HTM-Lакадемия"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_acdemy.png" width="115" height="41" target="_blank" alt="HTML-Академия"></a>
         </div>
     </footer>
 </body>
