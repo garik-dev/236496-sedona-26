@@ -9,8 +9,9 @@
 <body>
     <header class="page-header">
         <nav class="page-navigation">
-            <span class="page-header-logo"><img src="img/logo.png" width="140" htight="72" alt="Логотип города Седона">
-            </span>
+            <div class="page-header-logo">
+                <img src="img/logo.png" width="140" htight="72" alt="Логотип города Седона">
+            </div>
             <ul class="main-navigation">
                 <li><a href="">Информация</a></li>
                 <li><a href="">Фото и видео</a></li>
@@ -22,34 +23,35 @@
 
     <main>
         <section class="page-banner">
-            <h1>Седона</h1>
-            <span class="page-banner-img"> <img src="img/banner.jpg" alt="Добро пожаловать в Седону"></span>
+            <h1 class="visually-hidden">Седона</h1>
+            <div class="page-banner-img">
+                <img src="img/banner.jpg" alt="Добро пожаловать в Седону">
+            </div>
         </section>
 
         <section class="advantages">
-            <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
-            </h2>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-            </p>
-            <div class="advantage-first"></div>
-            <ul class="advantage-second"></ul>
-            <div class="advantage-third"></div>
-            <ul class="adventage-fourth"></ul>
+            <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <ul class="advantage-list">
+                <li class="advantage-first"></li>
+                <li class="advantage-second"></li>
+                <li class="advantage-third"></li>
+                <li class="adventage-fourth"></li>
+            </ul>
         </section>
 
         <section class="hotel-search">
-
-            <!-- Здесь, думаю, все таки h2, по аналогии с предыдущей секцией. И еще: может быть h2 и p объединить в блок? -->
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <img src="img/map.jpg" width="1200" height="594" alt="Найти
-                    отель на карте Седоны">
+            <div class="hotel-search-map">
+                <img src="img/map.jpg" width="1200" height="594" alt="Найти отель на карте Седоны">
+            </div>
 
             <!-- По заданию верстаем позже -->
 
             <form action="">Поиск гостиницы в Седоне</form>
-
         </section>
+
     </main>
 
     <footer>
