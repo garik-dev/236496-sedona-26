@@ -26,6 +26,8 @@
             <h1 class="visually-hidden">Седона</h1>
             <div class="page-banner-img">
                 <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+                <img src="img/polygon.png" width="1200" height="60" alt="">
+                <img src="img/background_photo.jpg" width="1200" height="535" alt="">
             </div>
         </section>
 
@@ -39,7 +41,7 @@
                     <p class="description">Седона — не атракцион для туристов,<br>там течет своя жизнь</p>
                 </div>
                 <div class="advantage-first-pic">
-                    <img src="/img/real_town.jpg" width="800" height="256" alt="Городок Седона">
+                    <img src="img/real_town.jpg" width="800" height="256" alt="Городок Седона">
                 </div>
             </div>
             <ul class="advantage-first-list">
@@ -91,12 +93,56 @@
         <section>
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <div class="hotel-search-map">
-                <img src="img/map.jpg" width="1200" height="475" alt="Найти отель на карте Седоны">
-            </div>
-            <!-- По заданию верстаем позже -->
+            <button type="button" class="btn-search">Поиск гостиницы в Седоне</button>
+            <div class="searh-wrapper">
+                <form action="" method="POST">
+                    <div class="form-fields">
+                        <p>
+                            <label for="arrival-date">Дата заезда:</label>
+                            <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017" required>
+                            <span class="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                    viewBox="0 0 21 22">
+                                    <path
+                                        d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                                    <path
+                                        d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                                </svg></span>
+                        </p>
+                        <p>
+                            <label for="arrival-date">Дата выезда:</label>
+                            <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017" required>
+                            <span class="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                    viewBox="0 0 21 22">
+                                    <path
+                                        d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                                    <path
+                                        d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                                </svg></span>
+                        </p>
+                    </div>
+                    <div class="form-folk">
+                        <p>
+                            <label for="adalts">Взрослые:</label>
+                            <button type="button" class="btn-minus">-</button>
+                            <input id="adalts" type="text" name="adalts" value="2">
+                            <button type="button" class="btn-plus">+</button>
+                        </p>
+                        <p>
+                            <label for="children">Дети:</label>
+                            <button type="button" class="btn-minus">-</button>
+                            <input id="children" type="text" name="children" value="0">
+                            <button type="button" class="btn-plus">+</button>
+                        </p>
+                    </div>
+                    <button type="submit" class="btn-search">Найти</button>
 
-            <form action="">Поиск гостиницы в Седоне</form>
+                </form>
+            </div>
+        </section>
+        <section class="search-map">
+            <h2 class="visualy-hidden">Интерактивная карта Седоны</h2>
+            <div class="hotel-search-map">
+                <img src="img/map.jpg" width="1200" height="594" alt="Поиск отеля на карте города Седона">
             </div>
         </section>
     </main>
@@ -106,17 +152,17 @@
 
         <ul class="social-network">
             <li>
-                <a href="#"><img src="img/twitter.svg" width="46" height="48" alt="Твиттер"></a>
+                <a href="#" class="social-link" target="_blank" title="Седона в Twitter"><img src="img/twitter.svg" width="46" height="48" alt=""></a>
             </li>
             <li>
-                <a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="Фейсбук"></a>
+                <a href="#" class="social-link" target="_blank" title="Седона в Facebook"><img src="img/fb-icon.svg" width="46" height="48" alt=""></a>
             </li>
             <li>
-                <a href="#"><img src="img/youtube.svg" width="46" height="48" alt="Ютуб"></a>
+                <a href="#" class="social-link" target="_blank" title="Седона в Youtube"><img src="img/youtube.svg" width="46" height="48" alt=""></a>
             </li>
         </ul>
         <div>
-            <span>WEBSITE BY</span>
+            <span>#WEBSITE BY</span>
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" target="_blank" alt="HTML-Академия"></a>
         </div>
     </footer>
