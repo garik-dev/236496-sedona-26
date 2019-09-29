@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    width: 1200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-navigation {
+    font-family: "PT Sans";
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.main-navigation {
+    list-style: none;
+}
+
+.main-navigation a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.main-navigation a:active {
+    color: #000000;
+    font-weight: 400;
+}
+
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation a:focus {
+    color: #766357;
+}
+
+.main-navigation a:active {
+    color: #000000;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.advantages-title {
+    width: 440px;
+    height: 48px;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.advantages-text {
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+/* Блок преимуществ пропущен согласно первому заданию */
+
+.search-hotel {
+    text-align: center;
+}
+
+.search-hotel-title {
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.searh-wrapper {
+    text-align: center;
+    width: 568px;
+    height: 481px;
+}
+
+.btn-search {
+    font: inherit;
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.btn-search:hover {
+    background-color: #604e43;
+}
+
+.btn-search:active {
+    background-color: #503e33;
+    color: #857870;
+}
+
+.form-search {
+    width: 568px;
+    height: 395px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.form-fields label,
+.form-folk label {
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.form-fields input,
+.form-folk input {
+    width: 346px;
+    height: 38px;
+    background-color: #f2f2f2;
+    font: inherit;
+    font-family: "PT Sans";
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+input:hover {
+    font: inherit;
+    background-color: #ebebeb;
+}
+
+input:focus {
+    font: inherit;
+    background-color: #ffffff;
+}
+
+
+/* С календарями не разобрался и с ховерами */
+
+.calendar {
+    width: 21px;
+    height: 22px;
+    background-color: #cacaca;
+}
+
+.calendar:hover {
+    background-color: #000000;
+}
+
+.calendar:active {
+    background-color: #81b3d2;
+}
+
+.btn-plus,
+.btn-minus {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.btn-plus:hover,
+.btn-minus:hover {
+    color: #000000;
+}
+
+.btn-plus:active,
+.btn-minus:active {
+    color: #81b3d2;
+}
+
+.adults input,
+.children input {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.btn-main {
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.btn-main:hover {
+    background-color: #669ec0;
+}
+
+.btn-main:active {
+    background-color: #5496bd;
+    color: #88b5d1;
+}
+
+.search-map {
+    display: none;
+}
+
+.hotel-filter,
+.hotel-rezult {
+    display: none;
+}
+
+.hotel-preview a {
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.hotel-preview span {
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.hotel-link {
+    width: 110px;
+    height: 27px;
+    background-color: #88b5d1;
+    color: #ffffff;
+    font-family: "PT Sans";
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.hotel-link:hover {
+    background-color: #669ec0;
+}
+
+.hotel-link:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+}
+
+.buttons a {
+    color: #ffffff;
+    font-family: "PT Sans";
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.hotel-btn {
+    width: 142px;
+    background-color: #766357;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.hotel-btn:hover {
+    background-color: #604e43;
+    color: #ffffff;
+}
+
+.hotel-btn:active {
+    background-color: #503e33;
+    opacity: 0.3;
+    color: #ffffff;
+}
+
+.rating {
+    text-align: right;
+}
+
+.rating ul {
+    list-style: none;
+}
+
+.footer-hashtag {
+    text-align: left;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.social-network {
+    text-align: center;
+}
+
+.social-network li {
+    list-style: none;
+}
+
+.social-button {
+    box-sizing: content-box;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+.social-button:hover {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.social-button img:active {
+    opacity: 0.3;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+
+/* Здесь тоже не понял */
+
+.footer-copyright img {
+    fill: #231f20;
+}
+
+.footer-copyright img:hover {
+    fill: #81b3d2;
+}
+
+.footer-copyright img:active {
+    fill: #bdbbbc;
+}
