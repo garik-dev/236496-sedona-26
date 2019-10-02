@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 .page-navigation {
     font-family: "PT Sans";
     color: #000000;
@@ -105,6 +109,7 @@ a {
 
 .btn-search {
     font: inherit;
+    text-align: center;
     width: 568px;
     height: 86px;
     background-color: #766357;
@@ -114,6 +119,10 @@ a {
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
+}
+
+.btn-search:hover {
+    background-color: #604e43;
 }
 
 .btn-search:hover {
@@ -141,23 +150,23 @@ a {
     text-transform: uppercase;
 }
 
-.form-fields input,
-.form-folk input {
+.form-fields input {
+    outline: none;
     width: 346px;
     height: 38px;
     background-color: #f2f2f2;
-    font: inherit;
     font-family: "PT Sans";
     color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
+    border: none;
 }
 
 input:hover {
     font: inherit;
-    background-color: #ebebeb;
+    background-color: #f2f2f2;
 }
 
 input:focus {
@@ -165,21 +174,23 @@ input:focus {
     background-color: #ffffff;
 }
 
-
-/* С календарями не разобрался и с ховерами */
-
 .calendar {
+    position: relative;
+    top: 5px;
+    left: -40px;
+    background-color: #f2f2f2;
+    background-image: url("img/calendar.svg");
     width: 21px;
     height: 22px;
-    background-color: #cacaca;
+    fill: #cacaca;
 }
 
 .calendar:hover {
-    background-color: #000000;
+    fill: #000000;
 }
 
 .calendar:active {
-    background-color: #81b3d2;
+    fill: #81b3d2;
 }
 
 .btn-plus,
@@ -357,17 +368,17 @@ input:focus {
     text-align: right;
 }
 
-
-/* Здесь тоже не понял */
-
-.footer-copyright img {
-    fill: #231f20;
+.copyright-img {
+    width: 115px;
+    height: 41px;
+    margin-left: 5px;
+    fill: #000000;
 }
 
-.footer-copyright img:hover {
+.copyright-img:hover {
     fill: #81b3d2;
 }
 
-.footer-copyright img:active {
+.copyright-img:active {
     fill: #bdbbbc;
 }
