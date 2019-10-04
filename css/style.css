@@ -1,6 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
-    padding: 0;
     background-color: #ffffff;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
@@ -10,12 +19,16 @@ body {
     text-transform: uppercase;
 }
 
-.wrapper {
-    width: 1200px;
+img {
+    max-width: 100%;
 }
 
 a {
     text-decoration: none;
+}
+
+.wrapper {
+    width: 1200px;
 }
 
 button {
@@ -397,7 +410,7 @@ input:focus {
 
 .social-button {
     display: block;
-    /* box-sizing: content-box; */
+    box-sizing: content-box;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
