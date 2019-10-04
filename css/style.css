@@ -22,8 +22,18 @@ button {
     border: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+/* Навигация */
+
 .page-navigation {
-    font-family: "PT Sans";
     color: #000000;
     font-size: 14px;
     font-weight: 700;
@@ -40,6 +50,10 @@ button {
     font-weight: 700;
 }
 
+.main-navigation a:visited {
+    color: #000000;
+}
+
 .main-navigation a:active {
     color: #000000;
     font-weight: 400;
@@ -49,28 +63,17 @@ button {
     color: #81b3d2;
 }
 
-.main-navigation a:focus {
+.main-navigation .current a {
     color: #766357;
 }
 
-.main-navigation a:active {
-    color: #000000;
-    font-weight: 400;
-}
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
+/* Блок преимуществ */
 
 .advantages-title {
     width: 440px;
     height: 48px;
     color: #000000;
-    font-family: "PT Sans";
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -79,7 +82,6 @@ button {
 
 .advantages-text {
     color: #333333;
-    font-family: "PT Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -87,7 +89,7 @@ button {
 }
 
 
-/* Блок преимуществ пропущен согласно первому заданию */
+/* Поиск гостиницы */
 
 .search-hotel {
     text-align: center;
@@ -95,7 +97,6 @@ button {
 
 .search-hotel-title {
     color: #000000;
-    font-family: "PT Sans";
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -114,7 +115,6 @@ button {
     height: 86px;
     background-color: #766357;
     color: #ffffff;
-    font-family: "PT Sans";
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -125,13 +125,12 @@ button {
     background-color: #604e43;
 }
 
-.btn-search:hover {
-    background-color: #604e43;
-}
-
 .btn-search:active {
     background-color: #503e33;
-    color: #857870;
+}
+
+.btn-search:active span {
+    opacity: 0.3;
 }
 
 .form-search {
@@ -176,13 +175,21 @@ input:focus {
 
 .calendar {
     position: relative;
+    outline: none;
     top: 5px;
     left: -40px;
     background-color: #f2f2f2;
     background-image: url("img/calendar.svg");
     width: 21px;
     height: 22px;
+    border: none;
+    outline: none;
     fill: #cacaca;
+}
+
+.calendar:visited {
+    border: none;
+    outline: none;
 }
 
 .calendar:hover {
@@ -190,6 +197,7 @@ input:focus {
 }
 
 .calendar:active {
+    outline: none;
     fill: #81b3d2;
 }
 
@@ -197,23 +205,37 @@ input:focus {
 .btn-minus {
     width: 38px;
     height: 38px;
+    outline: none;
     background-color: #f2f2f2;
+    margin: 0;
+    font-size: 20px;
 }
 
-.btn-plus:hover,
-.btn-minus:hover {
-    color: #000000;
+.number {
+    width: 38px;
+    height: 38px;
+    outline: none;
+    background-color: #f2f2f2;
+    margin: 0;
+    font-size: 14px;
 }
 
 .btn-plus:active,
 .btn-minus:active {
+    margin-block: 0;
     color: #81b3d2;
+    outline: none;
+    border: 0;
+    background-color: #f2f2f2;
+    margin: 0;
 }
 
 .adults input,
 .children input {
     width: 38px;
     height: 38px;
+    outline: none;
+    border: none;
     background-color: #f2f2f2;
 }
 
@@ -222,7 +244,6 @@ input:focus {
     height: 58px;
     background-color: #81b3d2;
     color: #ffffff;
-    font-family: "PT Sans";
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -233,23 +254,46 @@ input:focus {
     background-color: #669ec0;
 }
 
-.btn-main:active {
-    background-color: #5496bd;
-    color: #88b5d1;
+.btn-main:active span {
+    opacity: 0.3;
 }
 
 .search-map {
     display: none;
 }
 
+
+/* Католог_фильтр */
+
 .hotel-filter,
 .hotel-rezult {
     display: none;
 }
 
-.hotel-preview a {
+
+/* Католог_гостиницы */
+
+.hotel-title {
+    width: 210px;
     color: #000000;
-    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.hotel-title:hover {
+    width: 210px;
+    color: #81b3d2;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.hotel-title:active {
+    width: 210px;
+    color: #b2b2b2;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -258,50 +302,45 @@ input:focus {
 
 .hotel-preview span {
     color: #333333;
-    font-family: "PT Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-transform: uppercase;
 }
 
-.hotel-link {
+.hotel-amply {
     width: 110px;
     height: 27px;
     background-color: #88b5d1;
+}
+
+.hotel-amply span {
+    padding-left: 15px;
     color: #ffffff;
-    font-family: "PT Sans";
-    text-align: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     text-transform: uppercase;
 }
 
-.hotel-link:hover {
+.hotel-amply:hover {
     background-color: #669ec0;
-}
-
-.hotel-link:active {
-    background-color: #5496bd;
-    opacity: 0.3;
-}
-
-.buttons a {
     color: #ffffff;
-    font-family: "PT Sans";
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    text-transform: uppercase;
+}
+
+.hotel-amply:active {
+    background-color: #5496bd;
+}
+
+.hotel-amply:active span {
+    opacity: 0.3;
 }
 
 .hotel-btn {
     width: 142px;
+    height: 27px;
     background-color: #766357;
     color: #ffffff;
-    font-family: "PT Sans";
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -315,8 +354,7 @@ input:focus {
 
 .hotel-btn:active {
     background-color: #503e33;
-    opacity: 0.3;
-    color: #ffffff;
+    color: #857870;
 }
 
 .rating {
@@ -327,10 +365,23 @@ input:focus {
     list-style: none;
 }
 
+.rating-value {
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+
+/* Footer */
+
 .footer-hashtag {
     text-align: left;
     color: #000000;
-    font-family: "PT Sans";
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -352,6 +403,11 @@ input:focus {
     background-color: #81b3d2;
 }
 
+.social-button img {
+    text-align: center;
+    padding-top: 15px;
+}
+
 .social-button:hover {
     background-color: #669ec0;
 }
@@ -360,7 +416,7 @@ input:focus {
     background-color: #5496bd;
 }
 
-.social-button img:active {
+.social-button:active img {
     opacity: 0.3;
 }
 
