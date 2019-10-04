@@ -56,6 +56,7 @@ button {
 
 .main-navigation a:active {
     color: #000000;
+    opacity: 0.3;
     font-weight: 400;
 }
 
@@ -175,10 +176,9 @@ input:focus {
 
 .calendar {
     position: relative;
-    outline: none;
     top: 5px;
     left: -40px;
-    background-color: #f2f2f2;
+    background-color: inherit;
     background-image: url("img/calendar.svg");
     width: 21px;
     height: 22px;
@@ -187,17 +187,11 @@ input:focus {
     fill: #cacaca;
 }
 
-.calendar:visited {
-    border: none;
-    outline: none;
-}
-
 .calendar:hover {
     fill: #000000;
 }
 
 .calendar:active {
-    outline: none;
     fill: #81b3d2;
 }
 
@@ -252,6 +246,10 @@ input:focus {
 
 .btn-main:hover {
     background-color: #669ec0;
+}
+
+.btn-main:active {
+    background-color: #5496bd;
 }
 
 .btn-main:active span {
@@ -309,6 +307,7 @@ input:focus {
 }
 
 .hotel-amply {
+    display: block;
     width: 110px;
     height: 27px;
     background-color: #88b5d1;
@@ -397,7 +396,8 @@ input:focus {
 }
 
 .social-button {
-    box-sizing: content-box;
+    display: block;
+    /* box-sizing: content-box; */
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
