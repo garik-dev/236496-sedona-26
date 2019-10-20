@@ -1,4 +1,4 @@
-    html {
+        html {
         box-sizing: border-box;
     }
     
@@ -19,20 +19,20 @@
         text-transform: uppercase;
     }
     
-    img {
-        max-width: 100%;
-        height: auto;
-        border-style: none;
-    }
-    
     a {
         text-decoration: none;
     }
     
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
     .wrapper {
-        position: relative;
         width: 1200px;
         margin: 0 auto;
+        padding: 0;
         background-color: #ffffff;
         box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
     }
@@ -51,39 +51,31 @@
     /* Навигация */
     
     .page-header {
+        position: relative;
+        width: 1200px;
+        margin: 0;
+        padding: 0;
         background-color: #ffffff;
         color: #000000;
         font-family: "PT Sans";
         font-size: 14px;
         font-weight: 700;
-        height: 56px;
+        line-height: 21px;
     }
     
-    .page-navigation {
-        margin: 0;
-        padding-left: 6%;
-        padding-right: 6%;
-        font-size: 0;
+    .main-navigation {
+        display: flex;
+        justify-content: center;
     }
     
     .main-navigation li {
-        display: inline-block;
-        vertical-align: middle;
-        width: 20%;
-        padding-top: 22px;
-        padding-bottom: 14px;
-        font-size: 14px;
-        line-height: 22px;
-        box-sizing: border-box;
-    }
-    
-    .main-navigation li:last-child {
-        text-align: right;
+        display: block;
+        width: 240px;
+        padding: 20px 0 20px 70px;
     }
     
     .main-navigation li:nth-child(3) {
-        margin-left: 200px;
-        text-align: right;
+        margin-left: 240px;
     }
     
     .page-header-logo {
@@ -117,21 +109,14 @@
         color: #766357;
     }
     
-    .main-navigation {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        /* Для сетки */
-        display: block;
-        background-color: #ffffff;
-    }
-    
     .page-banner {
+        width: 1200px;
+        height: 505px;
         background-color: #81b3d2;
         background-image: url('../img/polygon.png'), url('../img/background_photo.jpg');
         background-repeat: no-repeat;
         background-position: bottom, top;
-        padding: 75px 0;
+        padding: 60px 0;
         margin: 0 auto;
         margin-bottom: 60px;
         border-style: none;
@@ -144,7 +129,7 @@
     /* Блок преимуществ */
     
     .advantages-title {
-        margin: 40px auto;
+        margin: 0 auto;
         /* padding-bottom: 55px; */
         width: 440px;
         text-align: center;
@@ -156,12 +141,12 @@
     }
     
     .advantages-text {
-        margin-top: 0 auto;
+        margin: 0 auto;
+        padding-top: 35px;
         text-align: center;
         color: #333333;
         font-size: 14px;
         font-weight: 400;
-        line-height: 26px;
         text-transform: uppercase;
     }
     
@@ -172,7 +157,6 @@
     
     .advantage-first-text {
         width: 400px;
-        height: 256px;
         padding: 30px 60px;
         background-color: #81b3d2;
         text-align: center;
@@ -244,6 +228,7 @@
     /* Поиск гостиницы */
     
     .search-hotel {
+        position: relative;
         margin: 0 auto;
         padding-top: 0;
         text-align: center;
@@ -271,18 +256,16 @@
         color: #333333;
     }
     
-    .btn-search {
-        position: relative;
-    }
+    .btn-search {}
     
     .searh-modal {
         /* margin: 0 auto;
-        width: 568px; */
+width: 568px; */
         position: absolute;
         width: 568px;
         height: 395px;
         left: 50%;
-        bottom: 80px;
+        top: 100%;
         margin-left: -284px;
         padding: 55px;
         box-sizing: border-box;
@@ -596,14 +579,6 @@
         fill: #bdbbbc;
     }
     
-    .page-header {
-        width: 1200px;
-        margin: 0 auto;
-        margin-bottom: 0px;
-        /* Для сетки */
-        min-height: 72px;
-    }
-    
     .footer-page {
         background-color: #ffffff;
         opacity: 0.9;
@@ -687,7 +662,6 @@
     .found-list {
         display: flex;
         justify-content: space-between;
-        padding-left: 0;
     }
     
     .found-list ul {
@@ -724,4 +698,3 @@
         display: flex;
         justify-content: flex-start;
         margin-top: 15px;
-    }
