@@ -156,6 +156,9 @@ ul {
 .advantage-text {
     width: 400px;
     padding: 45px 60px;
+    background-color: #81b3d2;
+    text-align: center;
+    color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,22 +174,12 @@ ul {
     justify-content: space-between;
 }
 
-.advantage-text {
-    margin: 0;
-    padding: 0;
-    background-color: #81b3d2;
-    text-align: center;
-    color: #ffffff;
-}
-
 .advantage-title {
-    margin-top: 50px;
     font-size: 21px;
     font-weight: 700;
 }
 
 .advantage-description {
-    margin-bottom: 55px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -236,7 +229,7 @@ ul {
     height: 70px;
 }
 
-.advantage-second img {
+.advantage img {
     display: block;
 }
 
