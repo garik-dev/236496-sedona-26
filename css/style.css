@@ -269,7 +269,6 @@
             padding: 0;
             text-align: center;
             color: #000000;
-            font-family: "PT Sans";
             font-size: 21px;
         }
         
@@ -283,7 +282,6 @@
             padding: 0;
             text-align: center;
             color: #333333;
-            font-family: "PT Sans";
             font-size: 14px;
             font-weight: 400;
             line-height: 21px;
@@ -601,7 +599,6 @@
         .found-sorting {
             margin-right: 30px;
             padding-left: 50px;
-            font-family: "PT Sans";
             font-size: 12px;
             font-weight: 400;
             line-height: 18px;
@@ -620,13 +617,14 @@
         }
         
         .found-list button {
+            padding: 0;
             background: #ffffff;
             border: none;
             border-bottom: 1px dotted #000000;
             opacity: 0.3;
             font-size: 12px;
             font-weight: 400;
-            line-height: 18px;
+            line-height: 14px;
             text-transform: uppercase;
         }
         
@@ -636,7 +634,7 @@
         
         .found-list button:hover {
             color: #81b3d2;
-            border-bottom: 1px solid #81b3d2;
+            border-bottom: 1px dotted #81b3d2;
             opacity: 1;
         }
         
@@ -964,7 +962,7 @@
         .copyright-img {
             width: 115px;
             height: 41px;
-            margin-left: 5px;
+            margin-left: 10px;
             fill: #000000;
         }
         
@@ -1018,7 +1016,6 @@
         .form-folk label {
             display: block;
             color: #000000;
-            font-family: "PT Sans";
             font-size: 14px;
             font-weight: 700;
             line-height: 26px;
@@ -1091,6 +1088,7 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+            font-weight: 700;
         }
         
         .adults label {
@@ -1100,6 +1098,7 @@
         
         .adults input {
             text-align: center;
+            font-weight: 700;
         }
         
         .children {
@@ -1109,6 +1108,7 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+            font-weight: 700;
         }
         
         .children label {
@@ -1118,6 +1118,7 @@
         
         .children input {
             text-align: center;
+            font-weight: 700;
         }
         
         .btn-minus {
@@ -1134,6 +1135,7 @@
             margin: 0;
             font-size: 20px;
             border: none;
+            font-weight: 700;
         }
         
         .btn-plus:hover,
@@ -1162,6 +1164,7 @@
             margin-top: 45px;
             width: 458px;
             height: 58px;
+            border: none;
             background-color: #81b3d2;
             color: #ffffff;
             font-size: 21px;
