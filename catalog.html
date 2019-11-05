@@ -36,16 +36,25 @@
                                     <legend>Инфраструктура:</legend>
                                     <ul>
                                         <li>
-                                            <input type="checkbox" name="pool" id="filter-pool" checked>
-                                            <label for="filter-pool">Бассейн</label>
+                                            <label class="check option">
+                                            <input type="checkbox" class="check__input" checked>
+                                            <span class="check__box"></span>
+                                            Бассейн
+                                            </label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="parking" id="filter-parking">
-                                            <label for="filter-parking">Парковка</label>
+                                            <label class="check option">
+                                            <input type="checkbox" class="check__input">
+                                            <span class="check__box"></span>
+                                            Парковка
+                                            </label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="wifi" id="filter-wifi">
-                                            <label for="filter-wifi">Wi-Fi</label>
+                                            <label class="check option">
+                                            <input type="checkbox" class="check__input" disabled>
+                                            <span class="check__box"></span>
+                                            Wi-Fi
+                                            </label>
                                         </li>
                                     </ul>
                                 </fieldset>
@@ -55,16 +64,25 @@
                                     <legend>Тип жилья:</legend>
                                     <ul>
                                         <li>
-                                            <input type="checkbox" name="hotel" id="filter-hotel" checked>
-                                            <label for="filter-hotel">Гостиница</label>
+                                            <label class="check option">
+                                            <input type="checkbox" class="check__input" checked>
+                                            <span class="check__box"></span>
+                                            Гостиница
+                                            </label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="motel" id="filter-motel" checked>
-                                            <label for="filter-motel">Мотель</label>
+                                            <label class="check option">
+                                            <input type="checkbox" class="check__input" checked>
+                                            <span class="check__box"></span>
+                                            Мотель
+                                            </label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="apartments" id="filter-apartments" checked>
-                                            <label for="filter-apartments">Апартаменты</label>
+                                            <label class="check option">
+                                            <input type="checkbox" class="check__input" checked disabled>
+                                            <span class="check__box"></span>
+                                            Апартаменты
+                                            </label>
                                         </li>
                                     </ul>
                                 </fieldset>
@@ -115,10 +133,10 @@
                     <div class="found-next">
                         <ul class="found-next">
                             <li>
-                                <button type="button" class="up"><svg xmlns="http://www.w3.org/2000/svg" class="up" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></button>
+                                <button type="button" class="up"><img src="/img/icon-up-dir.svg"></button>
                             </li>
                             <li>
-                                <button type="button" class="up"><svg xmlns="http://www.w3.org/2000/svg" class="up" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></button>
+                                <button type="button" class="down"><img src="/img/icon-down-dir.svg"></button>
                             </li>
                         </ul>
                     </div>
