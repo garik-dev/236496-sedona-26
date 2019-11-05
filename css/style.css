@@ -175,6 +175,7 @@ ul {
 }
 
 .advantage-title {
+    margin: 0;
     font-size: 21px;
     font-weight: 700;
 }
@@ -182,6 +183,7 @@ ul {
 .advantage-description {
     font-size: 14px;
     font-weight: 400;
+    margin: 0;
 }
 
 .advantage-list {
@@ -562,12 +564,11 @@ legend {
 /* Disabled */
 
 .check__input:disabled+.check__box {
-    background-image: url('/img/checkbox-off_disabled.svg');
-    opacity: 0.3;
+    background-image: url('/img/checkbox-off-3.svg');
 }
 
 .check__input:checked:disabled+.check__box {
-    background-image: url('/img/checkbox-on_disabled.svg');
+    background-image: url('/img/checkbox-on-2.svg');
 }
 
 .infrastructure li,
@@ -674,11 +675,15 @@ legend {
     border: none;
 }
 
-.up img:hover {
-    background-image: url('/img/icon-up-dir.svg');
+.up {
+    fill: #cacaca;
 }
 
-.active {
+.up:hover {
+    fill: #231F20;
+}
+
+.up:active {
     fill: #81b3d2;
 }
 
